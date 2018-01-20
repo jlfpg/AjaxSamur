@@ -8,7 +8,7 @@ $(document).ready(function(){
 		}
 		else{
 			$nombre=$('#nombre').val();
-			$puesto=$('#puesto').val();				
+			$puesto=$('#puesto').val();
 				$.ajax({
 					type: "POST",
 					url: "php/insertar.php",
@@ -83,4 +83,8 @@ function showUser(){
 		}
 	});
 }
-	
+//funcion que limpia los text fields tras insertar
+function ClearFields() {
+     document.getElementById("nombre").value = "";
+     document.getElementById("puesto").value = "";
+}
