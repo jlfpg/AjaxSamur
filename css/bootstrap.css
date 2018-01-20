@@ -10,6 +10,7 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,7 +26,13 @@ nav,
 section {
   display: block;
 }
+.invi{
+	opacity: 0;
 
+}
+.titulo{
+	color: #0b3541;
+}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -343,7 +350,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #292b2c;
-  background-color: #d9d9d9;
+  background-color: #1E9A9B;
 }
 
 [tabindex="-1"]:focus {
@@ -2080,6 +2087,7 @@ pre code {
 .table {
   width: 100%;
   max-width: 100%;
+  margin-left: 78%;
   margin-bottom: 1rem;
 }
 
@@ -2092,7 +2100,7 @@ pre code {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #eceeef;
+  border-bottom: 2px solid #B08A62;
 }
 
 .table tbody + tbody {
@@ -2114,7 +2122,7 @@ pre code {
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #eceeef;
+  border: 1px solid #CC5E34;
 }
 
 .table-bordered thead th,
@@ -5001,9 +5009,9 @@ a.badge:focus, a.badge:hover {
 }
 
 .alert-warning {
-  background-color: #fcf8e3;
-  border-color: #faf2cc;
-  color: #8a6d3b;
+  background-color: #BFB984;
+  border-color: #CC5E34	;
+  color: #CC5E34;
 }
 
 .alert-warning hr {
@@ -9168,7 +9176,7 @@ a.text-muted:focus, a.text-muted:hover {
 }
 
 .text-primary {
-  color: #0275d8 !important;
+  color: #0b3541 !important;
 }
 
 a.text-primary:focus, a.text-primary:hover {

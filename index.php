@@ -20,15 +20,15 @@
 					<hr>
 				<div>
 				<br>
-				<center><h3>Insercion de un nuevo Empleado</h3></center>
+				<div class ="titulo"><center><h3>Insercion de un nuevo Empleado</h3></center></div>
 				<br>
 					<form class = "form-inline">
 						<div class = "form-group">
-							<label>Nombre:</label>
+							<div class = "invi"><p>aaaaaaaaaaaaaaaaaa</p></div><div class ="titulo"><label>Nombre:</label></div>
 							<input type  = "text" id = "nombre" class = "form-control">
 						</div>
 						<div class = "form-group">
-							<label>Puesto:</label>
+							<div class ="titulo"><label>Puesto:</label></div>
 							<input type  = "text" id = "puesto" class = "form-control">
 						</div>
 						<div class = "form-group">
