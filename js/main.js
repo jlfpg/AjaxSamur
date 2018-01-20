@@ -1,14 +1,13 @@
-
-	$(document).ready(function(){
-		showUser();
-		//Add New
-		$(document).on('click', '#nuevo', function(){
-			if ($('#nombre').val()=="" || $('#puesto').val()==""){
-				alert('Por favor introduzca datos validos');
-			}
-			else{
-			$nombre=$('#nombre').val();
-			$puesto=$('#puesto').val();				
+$(document).ready(function(){
+	showUser();
+	//Add New
+	$(document).on('click', '#nuevo', function(){
+		if ($('#nombre').val()=="" || $('#puesto').val()==""){
+			alert('Por favor introduzca datos validos');
+		}
+		else{
+		$nombre=$('#nombre').val();
+		$puesto=$('#puesto').val();				
 				$.ajax({
 					type: "POST",
 					url: "php/insertar.php",
@@ -46,6 +45,9 @@
 			$('.modal-backdrop').remove();
 			$unombre=$('#unombre'+$uid).val();
 			$upuesto=$('#upuesto'+$uid).val();
+			if ($('#unombre').val()=="" || $('#upuesto').val()==""){
+			alert('Por favor introduzca datos validos');
+			}else{
 				$.ajax({
 					type: "POST",
 					url: "php/actualizar.php",
@@ -59,11 +61,12 @@
 						showUser();
 					}
 				});
+			}
 		});
-	
+		
 	});
 	
-	//Showing our Table
+	//funcion que pinta la tabla
 	function showUser(){
 		$.ajax({
 			url: 'php/leer.php',
