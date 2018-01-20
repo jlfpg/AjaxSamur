@@ -52,7 +52,7 @@
 		//Add New
 		$(document).on('click', '#nuevo', function(){
 			if ($('#nombre').val()=="" || $('#puesto').val()==""){
-				alert('Please input data first');
+				alert('Por favor introduzca datos validos');
 			}
 			else{
 			$nombre=$('#nombre').val();
