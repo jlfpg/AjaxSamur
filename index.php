@@ -38,6 +38,8 @@
 				</div>
                 </div>
             </div><br>
+			<div class ="titulo"><center><h3>Tabla de los Empleados Samur</h3></center></div>
+			<br>
 			<div class="row">
 			<div id="userTable"></div>
 			</div>
