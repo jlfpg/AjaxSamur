@@ -1,5 +1,5 @@
 <?php
-	include('conexion.php');
+	include('php/conexion.php');
 ?>
 <!DOCTYPE html>
 <html lang = "en">
@@ -61,7 +61,7 @@
 			$puesto=$('#puesto').val();				
 				$.ajax({
 					type: "POST",
-					url: "insertar.php",
+					url: "php/insertar.php",
 					data: {
 						nombre: $nombre,
 						puesto: $puesto,
@@ -78,7 +78,7 @@
 			$id=$(this).val();
 				$.ajax({
 					type: "POST",
-					url: "borrar.php",
+					url: "php/borrar.php",
 					data: {
 						id: $id,
 						del: 1,
@@ -98,7 +98,7 @@
 			$upuesto=$('#upuesto'+$uid).val();
 				$.ajax({
 					type: "POST",
-					url: "actualizar.php",
+					url: "php/actualizar.php",
 					data: {
 						id: $uid,
 						nombre: $unombre,
@@ -116,7 +116,7 @@
 	//Showing our Table
 	function showUser(){
 		$.ajax({
-			url: 'leer.php',
+			url: 'php/leer.php',
 			type: 'POST',
 			async: false,
 			data:{
