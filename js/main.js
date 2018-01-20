@@ -19,6 +19,7 @@ $(document).ready(function(){
 					},
 					success: function(){
 						showUser();
+						ClearFields();
 					}
 				});
 			}
