@@ -67,7 +67,6 @@ $(document).ready(function(){
 				});
 			}
 		});
-		
 	});
 	
 //funcion que pinta la tabla

@@ -5,45 +5,62 @@
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css" />
 		<title>PHP CRUD AJAX/JQuery</title>
 	</head>
-<body>
-	<div style="height:30px;"></div>
-	<div class = "row">	
-		<div class = "col-md-3">
-		</div>
-		<div class = "col-md-6 well">
-			<div class="row">
-                <div class="col-lg-12">
-                    <center><h1 class = "text-primary">PHP - CRUD Empleados Samur usando AJAX/JQuery</h1></center>
-					<hr>
-				<div>
-				<br>
-				<div class ="titulo"><center><h3>Insercion de un nuevo Empleado</h3></center></div>
-				<br>
+	
+	<body>
+		<div style="height:30px;"></div>
+		<div class = "row">	
+		<!--Bootstrap -->
+			<div class = "col-md-3"></div>
+			<div class = "col-md-6 well">
+				<div class="row">
+				<!--Titulo -->
+					<div class="col-lg-12">
+						<center><h1 class = "text-primary">PHP - CRUD Empleados Samur usando AJAX/JQuery</h1></center>
+						<hr>
+					<div>
+					<br>
+					<div class ="titulo">
+						<center><h3>Insercion de un nuevo Empleado</h3></center>
+					</div>
+					<br>
+					
+					<!--Formulario de inserccion de empleados -->
 					<form class = "form-inline">
 						<div class = "form-group">
-							<div class = "invi"><p>aaaaaaaaaaaaaaaaaa</p></div><div class ="titulo"><label>Nombre:</label></div>
-							<input type  = "text" id = "nombre" class = "form-control">
+							<div class = "invi">
+								<p>aaaaaaaaaaaaaaaaaa</p>
+							</div>
+							<div class ="titulo">
+								<label>Nombre:</label>
+							</div>
+							<input type  = "text" placeholder="" id = "nombre" class = "form-control">
 						</div>
 						<div class = "form-group">
-							<div class ="titulo"><label>Puesto:</label></div>
+							<div class ="titulo">
+								<label>Puesto:</label>
+							</div>
 							<input type  = "text" id = "puesto" class = "form-control">
 						</div>
 						<div class = "form-group">
-							<button type = "button" id="nuevo" class = "btn btn-primary"><span class = "glyphicon glyphicon-plus"></span> Add</button>
+							<button type = "button" id="nuevo" class = "btn btn-primary"><span class = "glyphicon glyphicon-plus"></span> Añadir</button>
 						</div>
 					</form>
+					</div>
+					</div>
+				</div><br>
+				
+				<!--Tabla que muestra los empleados ya insertados y las opciones -->
+				<div class ="titulo">
+					<center><h3>Tabla de los Empleados Samur</h3></center>
 				</div>
-                </div>
-            </div><br>
-			<div class ="titulo"><center><h3>Tabla de los Empleados Samur</h3></center></div>
-			<br>
-			<div class="row">
-			<div id="userTable"></div>
+				<br>
+				<div class="row">
+				<div id="userTable"></div>
+				</div>
 			</div>
 		</div>
-	</div>
-</body>
-<script src = "js/jquery-3.1.1.js"></script>	
-<script src = "js/bootstrap.js"></script>
-<script src="js/main.js"></script>
+	</body>
+	<script src = "js/jquery-3.1.1.js"></script>	
+	<script src = "js/bootstrap.js"></script>
+	<script src="js/main.js"></script>
 </html>
