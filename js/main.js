@@ -1,13 +1,14 @@
+//CRUD
 $(document).ready(function(){
 	showUser();
-	//Add New
+	//Insert
 	$(document).on('click', '#nuevo', function(){
 		if ($('#nombre').val()=="" || $('#puesto').val()==""){
 			alert('Por favor introduzca datos validos');
 		}
 		else{
-		$nombre=$('#nombre').val();
-		$puesto=$('#puesto').val();				
+			$nombre=$('#nombre').val();
+			$puesto=$('#puesto').val();				
 				$.ajax({
 					type: "POST",
 					url: "php/insertar.php",
@@ -22,6 +23,7 @@ $(document).ready(function(){
 				});
 			}
 		});
+		
 		//Delete
 		$(document).on('click', '.delete', function(){
 			$id=$(this).val();
@@ -37,6 +39,7 @@ $(document).ready(function(){
 					}
 				});
 		});
+		
 		//Update
 		$(document).on('click', '.updateuser', function(){
 			$uid=$(this).val();
@@ -45,8 +48,9 @@ $(document).ready(function(){
 			$('.modal-backdrop').remove();
 			$unombre=$('#unombre'+$uid).val();
 			$upuesto=$('#upuesto'+$uid).val();
+			
 			if ($('#unombre').val()=="" || $('#upuesto').val()==""){
-			alert('Por favor introduzca datos validos');
+				alert('Por favor introduzca datos validos');
 			}else{
 				$.ajax({
 					type: "POST",
@@ -66,18 +70,18 @@ $(document).ready(function(){
 		
 	});
 	
-	//funcion que pinta la tabla
-	function showUser(){
-		$.ajax({
-			url: 'php/leer.php',
-			type: 'POST',
-			async: false,
-			data:{
-				show: 1
-			},
-			success: function(response){
-				$('#userTable').html(response);
-			}
-		});
-	}
+//funcion que pinta la tabla
+function showUser(){
+	$.ajax({
+		url: 'php/leer.php',
+		type: 'POST',
+		async: false,
+		data:{
+			show: 1
+		},
+		success: function(response){
+			$('#userTable').html(response);
+		}
+	});
+}
 	
